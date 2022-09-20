@@ -1,0 +1,21 @@
+uuid: d562dfc9-84cc-4649-89b2-0a8cfc7b27cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_birthdate
+    - node.type.cast_member
+  module:
+    - datetime
+id: node.cast_member.field_birthdate
+field_name: field_birthdate
+entity_type: node
+bundle: cast_member
+label: Birthdate
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

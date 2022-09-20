@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 83d08a79-0331-4d82-a71b-371bade466f1
+name: 'Movie Catalog'
+mail: admin@example.com
+slogan: 'This is an example of movie catalog, with basic storage of movies and cast'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

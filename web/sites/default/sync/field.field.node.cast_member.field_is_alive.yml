@@ -1,0 +1,23 @@
+uuid: 57408f47-20d3-4972-9555-50ff51582073
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_alive
+    - node.type.cast_member
+id: node.cast_member.field_is_alive
+field_name: field_is_alive
+entity_type: node
+bundle: cast_member
+label: 'Alive?'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

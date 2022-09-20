@@ -1,0 +1,19 @@
+uuid: 96e49834-7809-446a-bc2f-dd0f576311e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trademarks
+    - node.type.cast_member
+id: node.cast_member.field_trademarks
+field_name: field_trademarks
+entity_type: node
+bundle: cast_member
+label: Trademarks
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

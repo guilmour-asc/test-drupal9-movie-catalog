@@ -1,0 +1,32 @@
+uuid: 06c23a1d-c1ca-4043-b5d0-d161cbc7c5f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cast_member.field_alternate_names
+    - field.field.node.cast_member.field_birthdate
+    - field.field.node.cast_member.field_deathdate
+    - field.field.node.cast_member.field_is_alive
+    - field.field.node.cast_member.field_trademarks
+    - field.field.node.cast_member.field_trivia
+    - node.type.cast_member
+  module:
+    - user
+id: node.cast_member.teaser
+targetEntityType: node
+bundle: cast_member
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_alternate_names: true
+  field_birthdate: true
+  field_deathdate: true
+  field_is_alive: true
+  field_trademarks: true
+  field_trivia: true

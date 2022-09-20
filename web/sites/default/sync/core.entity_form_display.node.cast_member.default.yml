@@ -1,0 +1,155 @@
+uuid: 8c650147-44ad-4a11-a32b-5086fdc12f17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cast_member.field_alternate_names
+    - field.field.node.cast_member.field_birthdate
+    - field.field.node.cast_member.field_deathdate
+    - field.field.node.cast_member.field_is_alive
+    - field.field.node.cast_member.field_trademarks
+    - field.field.node.cast_member.field_trivia
+    - node.type.cast_member
+  module:
+    - conditional_fields
+    - datetime
+    - field_group
+    - path
+third_party_settings:
+  field_group:
+    group_extra_info:
+      children:
+        - field_trademarks
+        - field_trivia
+      label: 'Extra Info'
+      region: content
+      parent_name: ''
+      weight: 11
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+        open: false
+        weight: 0
+        effect: none
+id: node.cast_member.default
+targetEntityType: node
+bundle: cast_member
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_alternate_names:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_birthdate:
+    type: datetime_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_deathdate:
+    type: datetime_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        c2507619-2ad4-48c2-b7f7-a10e998bc5d9:
+          entity_type: node
+          bundle: cast_member
+          dependee: field_is_alive
+          settings:
+            state: '!visible'
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: 1
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_is_alive:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_trademarks:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_trivia:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

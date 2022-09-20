@@ -1,0 +1,30 @@
+uuid: 8cbd1249-206a-4361-8cd8-81d1812645e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie.field_release_date
+    - node.type.movie
+  module:
+    - datetime
+    - user
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  field_release_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
