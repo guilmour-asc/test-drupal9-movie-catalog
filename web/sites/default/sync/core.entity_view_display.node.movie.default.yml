@@ -3,16 +3,68 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.movie.field_cast
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_parental_rating
+    - field.field.node.movie.field_plot_keywords
+    - field.field.node.movie.field_poster
     - field.field.node.movie.field_release_date
+    - field.field.node.movie.field_synopsis
+    - field.field.node.movie.field_trivia_movie
     - node.type.movie
   module:
     - datetime
+    - image
+    - options
+    - text
     - user
 id: node.movie.default
 targetEntityType: node
 bundle: movie
 mode: default
 content:
+  field_cast:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_genre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_parental_rating:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_plot_keywords:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_poster:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
   field_release_date:
     type: datetime_default
     label: above
@@ -21,6 +73,21 @@ content:
       format_type: medium
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_synopsis:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_trivia_movie:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
     region: content
   links:
     settings: {  }

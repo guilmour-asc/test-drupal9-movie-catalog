@@ -1,32 +1,36 @@
-uuid: 319c28b0-5095-4fec-ada6-c74aeb2fc404
+uuid: 081d31e0-90ae-4ad5-ba8b-233f52d0851f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.cast_member.field_alternate_names
-    - field.field.node.cast_member.field_birthdate
-    - field.field.node.cast_member.field_deathdate
-    - field.field.node.cast_member.field_is_alive
+    - field.field.node.cast_member.field_biography
+    - field.field.node.cast_member.field_birth_date
+    - field.field.node.cast_member.field_children
+    - field.field.node.cast_member.field_death_date
+    - field.field.node.cast_member.field_father
+    - field.field.node.cast_member.field_mother
+    - field.field.node.cast_member.field_roles
     - field.field.node.cast_member.field_trademarks
     - field.field.node.cast_member.field_trivia
+    - field.field.node.cast_member.field_vital_status
     - node.type.cast_member
   module:
     - datetime
+    - text
     - user
 id: node.cast_member.default
 targetEntityType: node
 bundle: cast_member
 mode: default
 content:
-  field_alternate_names:
-    type: string
+  field_biography:
+    type: text_default
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 109
     region: content
-  field_birthdate:
+  field_birth_date:
     type: datetime_default
     label: above
     settings:
@@ -35,24 +39,46 @@ content:
     third_party_settings: {  }
     weight: 102
     region: content
-  field_deathdate:
+  field_children:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_death_date:
     type: datetime_default
     label: above
     settings:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 106
+    weight: 103
     region: content
-  field_is_alive:
-    type: boolean
+  field_father:
+    type: string
     label: above
     settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 104
+    weight: 106
+    region: content
+  field_mother:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 110
     region: content
   field_trademarks:
     type: string
@@ -60,7 +86,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 105
+    weight: 104
     region: content
   field_trivia:
     type: string
@@ -68,7 +94,17 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 103
+    weight: 105
+    region: content
+  field_vital_status:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 101
     region: content
   links:
     settings: {  }

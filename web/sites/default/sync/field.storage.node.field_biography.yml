@@ -1,15 +1,16 @@
-uuid: c4129fc2-2746-4df9-950c-fbef013005bd
+uuid: f8c30b30-780a-4497-8480-ef03f946dc6d
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_is_alive
-field_name: field_is_alive
+    - text
+id: node.field_biography
+field_name: field_biography
 entity_type: node
-type: boolean
+type: text_long
 settings: {  }
-module: core
+module: text
 locked: false
 cardinality: 1
 translatable: true

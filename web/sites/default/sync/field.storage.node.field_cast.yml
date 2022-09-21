@@ -1,17 +1,15 @@
-uuid: 4904d991-5aab-4fe2-a6ae-13fcd2416719
+uuid: fae8cc93-6804-4e74-8f7f-de795f4d2ae2
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_trivia
-field_name: field_trivia
+id: node.field_cast
+field_name: field_cast
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: node
 module: core
 locked: false
 cardinality: -1

@@ -1,19 +1,21 @@
-uuid: 63ba1f90-72b7-4f77-bf4a-a9133b7a0398
+uuid: c95c1fc1-4e06-4cb9-b6a3-1b51d495b7fa
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_trademarks
+    - field.storage.node.field_death_date
     - node.type.cast_member
-id: node.cast_member.field_trademarks
-field_name: field_trademarks
+  module:
+    - datetime
+id: node.cast_member.field_death_date
+field_name: field_death_date
 entity_type: node
 bundle: cast_member
-label: Trademarks
+label: 'Date of death'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: datetime

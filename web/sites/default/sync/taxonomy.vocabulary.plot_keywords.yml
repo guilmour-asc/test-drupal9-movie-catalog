@@ -1,0 +1,8 @@
+uuid: 434ca532-1a19-40c6-b0d4-0cf29cc1f2b4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Plot keywords'
+vid: plot_keywords
+description: 'Useful keys for movie searching'
+weight: 0

@@ -1,14 +1,14 @@
-uuid: 1b8e7ed9-34bb-4654-bfe0-a9a24c6e7798
+uuid: e3dd7c46-0dd6-4e33-9d2c-1c0707ab5d36
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_trivia
-    - node.type.cast_member
-id: node.cast_member.field_trivia
-field_name: field_trivia
+    - field.storage.node.field_trivia_movie
+    - node.type.movie
+id: node.movie.field_trivia_movie
+field_name: field_trivia_movie
 entity_type: node
-bundle: cast_member
+bundle: movie
 label: Trivia
 description: ''
 required: false

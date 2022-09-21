@@ -1,0 +1,8 @@
+uuid: cb61dade-8e93-43da-8a6a-99062cc61a41
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cast Roles'
+vid: cast_roles
+description: 'Possible roles for the cast members'
+weight: 0

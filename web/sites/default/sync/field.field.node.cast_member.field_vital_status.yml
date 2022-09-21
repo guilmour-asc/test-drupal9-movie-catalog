@@ -1,12 +1,12 @@
-uuid: 57408f47-20d3-4972-9555-50ff51582073
+uuid: 3fa10435-2909-48ec-a6f9-a806041f3f19
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_is_alive
+    - field.storage.node.field_vital_status
     - node.type.cast_member
-id: node.cast_member.field_is_alive
-field_name: field_is_alive
+id: node.cast_member.field_vital_status
+field_name: field_vital_status
 entity_type: node
 bundle: cast_member
 label: 'Alive?'
@@ -18,6 +18,6 @@ default_value:
     value: 1
 default_value_callback: ''
 settings:
-  on_label: 'Yes'
-  off_label: 'No'
+  on_label: Alive
+  off_label: Deceased
 field_type: boolean

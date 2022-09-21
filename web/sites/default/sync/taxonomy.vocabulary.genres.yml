@@ -1,0 +1,8 @@
+uuid: 6323fb74-32c4-48c4-9b18-dba8a231b560
+langcode: en
+status: true
+dependencies: {  }
+name: Genres
+vid: genres
+description: 'Movie genres'
+weight: 0

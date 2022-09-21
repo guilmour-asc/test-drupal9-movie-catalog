@@ -1,11 +1,11 @@
-uuid: 4904d991-5aab-4fe2-a6ae-13fcd2416719
+uuid: eb3b7b84-5361-4ebf-add8-b0876a952e24
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_trivia
-field_name: field_trivia
+id: node.field_father
+field_name: field_father
 entity_type: node
 type: string
 settings:
@@ -14,7 +14,7 @@ settings:
   is_ascii: false
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

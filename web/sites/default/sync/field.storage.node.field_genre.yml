@@ -1,19 +1,19 @@
-uuid: 29f3d3b5-1080-4780-9bdb-a925553c7934
+uuid: c63e311b-8cee-4b3c-a7ae-8fc8044bb7e9
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
     - node
-id: node.field_birthdate
-field_name: field_birthdate
+    - taxonomy
+id: node.field_genre
+field_name: field_genre
 entity_type: node
-type: datetime
+type: entity_reference
 settings:
-  datetime_type: date
-module: datetime
+  target_type: taxonomy_term
+module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

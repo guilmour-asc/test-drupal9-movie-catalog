@@ -1,15 +1,15 @@
-uuid: 8660c6ce-6614-4287-bf91-3fc46da0394e
+uuid: 2a92510a-64bb-4817-8a8a-b6ce9e6f4ea0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_alternate_names
+    - field.storage.node.field_children
     - node.type.cast_member
-id: node.cast_member.field_alternate_names
-field_name: field_alternate_names
+id: node.cast_member.field_children
+field_name: field_children
 entity_type: node
 bundle: cast_member
-label: 'Alternate names'
+label: Children
 description: ''
 required: false
 translatable: false

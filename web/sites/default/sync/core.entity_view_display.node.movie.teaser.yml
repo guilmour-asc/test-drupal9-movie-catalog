@@ -4,7 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.movie.field_cast
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_parental_rating
+    - field.field.node.movie.field_plot_keywords
+    - field.field.node.movie.field_poster
     - field.field.node.movie.field_release_date
+    - field.field.node.movie.field_synopsis
+    - field.field.node.movie.field_trivia_movie
     - node.type.movie
   module:
     - user
@@ -19,4 +26,11 @@ content:
     weight: 100
     region: content
 hidden:
+  field_cast: true
+  field_genre: true
+  field_parental_rating: true
+  field_plot_keywords: true
+  field_poster: true
   field_release_date: true
+  field_synopsis: true
+  field_trivia_movie: true

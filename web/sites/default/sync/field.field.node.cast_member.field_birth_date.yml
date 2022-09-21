@@ -1,19 +1,21 @@
-uuid: 63ba1f90-72b7-4f77-bf4a-a9133b7a0398
+uuid: ec513d32-a2a1-47d9-9dae-26f124aea124
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_trademarks
+    - field.storage.node.field_birth_date
     - node.type.cast_member
-id: node.cast_member.field_trademarks
-field_name: field_trademarks
+  module:
+    - datetime
+id: node.cast_member.field_birth_date
+field_name: field_birth_date
 entity_type: node
 bundle: cast_member
-label: Trademarks
+label: 'Birth date'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: datetime

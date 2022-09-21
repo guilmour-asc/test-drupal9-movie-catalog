@@ -1,0 +1,29 @@
+uuid: 0bcaecb8-a77d-4999-925a-dfcf97230f24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_roles
+    - node.type.cast_member
+    - taxonomy.vocabulary.cast_roles
+id: node.cast_member.field_roles
+field_name: field_roles
+entity_type: node
+bundle: cast_member
+label: Roles
+description: 'The roles must be separated by commas (<code>","</code>).'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cast_roles: cast_roles
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

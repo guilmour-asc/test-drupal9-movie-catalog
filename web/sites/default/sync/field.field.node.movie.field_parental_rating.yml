@@ -1,0 +1,23 @@
+uuid: 53df9451-aa4d-43a4-8c50-508cb5382fa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parental_rating
+    - node.type.movie
+  module:
+    - options
+id: node.movie.field_parental_rating
+field_name: field_parental_rating
+entity_type: node
+bundle: movie
+label: 'Parental Rating'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: g
+default_value_callback: ''
+settings: {  }
+field_type: list_string

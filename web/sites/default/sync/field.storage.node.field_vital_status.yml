@@ -1,17 +1,15 @@
-uuid: f5c92073-d6b9-4e3a-86d3-3caf1f43762c
+uuid: 5729a9b6-a7a6-4336-a479-c81996cc6cce
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
     - node
-id: node.field_deathdate
-field_name: field_deathdate
+id: node.field_vital_status
+field_name: field_vital_status
 entity_type: node
-type: datetime
-settings:
-  datetime_type: date
-module: datetime
+type: boolean
+settings: {  }
+module: core
 locked: false
 cardinality: 1
 translatable: true

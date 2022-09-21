@@ -1,20 +1,20 @@
-uuid: fa674abb-92b9-4550-98e3-ec4f99fa36cd
+uuid: 000c3f5d-48f3-4d02-8bcf-890f757bfce5
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_alternate_names
-field_name: field_alternate_names
+id: node.field_mother
+field_name: field_mother
 entity_type: node
 type: string
 settings:
-  max_length: 100
+  max_length: 255
   case_sensitive: false
   is_ascii: false
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

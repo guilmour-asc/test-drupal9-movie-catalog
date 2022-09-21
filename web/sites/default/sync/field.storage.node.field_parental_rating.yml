@@ -1,0 +1,36 @@
+uuid: f7baeb0c-f804-4d5e-9351-5bf535172996
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_parental_rating
+field_name: field_parental_rating
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: g
+      label: 'All ages'
+    -
+      value: pg
+      label: '4 - 7 years'
+    -
+      value: pg-13
+      label: '7 - 13 years'
+    -
+      value: r
+      label: '13 - 17 years'
+    -
+      value: nc-17
+      label: '18+ years'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,17 +1,16 @@
-uuid: 4904d991-5aab-4fe2-a6ae-13fcd2416719
+uuid: 467db501-2b30-4474-8c87-02c3f0fbbfc9
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_trivia
-field_name: field_trivia
+    - taxonomy
+id: node.field_plot_keywords
+field_name: field_plot_keywords
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: -1

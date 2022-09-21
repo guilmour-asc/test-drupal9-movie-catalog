@@ -1,4 +1,4 @@
-uuid: 280669b7-f3ad-4633-b644-8b18d4fb6e68
+uuid: 5ba4108c-7315-40b4-af5b-8d8b8d451a3e
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ field_name: field_trademarks
 entity_type: node
 type: string
 settings:
-  max_length: 300
+  max_length: 255
   case_sensitive: false
   is_ascii: false
 module: core

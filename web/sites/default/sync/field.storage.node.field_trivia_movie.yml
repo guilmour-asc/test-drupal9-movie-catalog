@@ -1,11 +1,11 @@
-uuid: 4904d991-5aab-4fe2-a6ae-13fcd2416719
+uuid: 8fd3bd0d-729d-48ea-be48-7b7ec04ad175
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_trivia
-field_name: field_trivia
+id: node.field_trivia_movie
+field_name: field_trivia_movie
 entity_type: node
 type: string
 settings:

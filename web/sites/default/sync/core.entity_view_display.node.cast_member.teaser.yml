@@ -1,15 +1,19 @@
-uuid: 06c23a1d-c1ca-4043-b5d0-d161cbc7c5f6
+uuid: 9e391c8a-a6f7-4dce-b4d7-26acc7538f01
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.cast_member.field_alternate_names
-    - field.field.node.cast_member.field_birthdate
-    - field.field.node.cast_member.field_deathdate
-    - field.field.node.cast_member.field_is_alive
+    - field.field.node.cast_member.field_biography
+    - field.field.node.cast_member.field_birth_date
+    - field.field.node.cast_member.field_children
+    - field.field.node.cast_member.field_death_date
+    - field.field.node.cast_member.field_father
+    - field.field.node.cast_member.field_mother
+    - field.field.node.cast_member.field_roles
     - field.field.node.cast_member.field_trademarks
     - field.field.node.cast_member.field_trivia
+    - field.field.node.cast_member.field_vital_status
     - node.type.cast_member
   module:
     - user
@@ -24,9 +28,13 @@ content:
     weight: 100
     region: content
 hidden:
-  field_alternate_names: true
-  field_birthdate: true
-  field_deathdate: true
-  field_is_alive: true
+  field_biography: true
+  field_birth_date: true
+  field_children: true
+  field_death_date: true
+  field_father: true
+  field_mother: true
+  field_roles: true
   field_trademarks: true
   field_trivia: true
+  field_vital_status: true
